@@ -75,32 +75,29 @@
         compatible = "zmk,keymap";
 
         default_layer {
-
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL       &kp A  &kp S  &kp D     &kp F  &kp G      &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                              &kp LGUI  &mo 1  &kp SPACE  &kp RET  &mo 2  &kp RALT
+&kp TAB           &kp Q  &kp W  &kp E         &kp R  &kp T      &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D         &kp F  &kp G      &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C         &kp V  &kp B      &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp CAPSLOCK
+                                &kp LEFT_ALT  &mo 1  &kp SPACE  &kp RET  &mo 2  &kp LSHFT
             >;
         };
 
         lower_layer {
-           
             bindings = <
-&kp TAB    &kp N1        &kp N2      &kp N3        &kp N4        &kp N5     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &kp DEL
-&kp LCTRL  &kp N6        &kp N7      &kp N8        &kp N9        &kp N0     &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &cmd_mode  &trans
-&kp LSHFT  &tog NUMBERS  &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &trans     &trans    &trans    &trans    &trans     &trans     &trans
-                                     &kp LGUI      &trans        &kp SPACE  &kp RET   &trans    &kp LGUI
+&kp TAB           &kp EXCLAMATION   &kp AT_SIGN            &kp HASH           &kp DOLLAR       &kp PERCENT  &kp CARET          &kp AMPERSAND   &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DEL
+&kp LEFT_SHIFT    &kp BACKSLASH     &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp TILDE    &kp EQUAL          &kp UNDERSCORE  &kp MINUS      &kp PLUS              &kp COLON              &kp APOS
+&kp LEFT_CONTROL  &kp SINGLE_QUOTE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp PIPE     &kp DOUBLE_QUOTES  &trans          &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &kp CAPSLOCK
+                                                           &kp LGUI           &trans           &trans       &trans             &kp BACKSPACE   &kp DEL
             >;
         };
 
         raise_layer {
-           
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS   &trans    &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &kp LPAR  &kp RPAR  &none_blk  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &kp LBKT  &kp RBKT  &trans     &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE  &kp RET    &trans     &kp RALT
+&kp TAB           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N7          &kp N8        &kp N9     &kp N0    &kp BSPC
+&kp LEFT_SHIFT    &trans        &trans        &trans          &trans        &trans        &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp BSLH  &kp GRAVE
+&kp LEFT_CONTROL  &trans        &trans        &trans          &trans        &trans        &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp PIPE  &kp TILDE
+                                              &kp LEFT_SHIFT  &kp ESCAPE    &kp TAB       &kp RET       &trans          &kp LEFT_ALT
             >;
         };
 
@@ -114,7 +111,6 @@
         };
 
         number_layer {
-
             bindings = <
 &kp TAB    &trans        &kp N1  &kp N2    &kp N3  &trans        &trans     &trans     &trans     &trans   &trans        &kp BSPC
 &kp LCTRL  &trans        &kp N4  &kp N5    &kp N6  &kp LS(SEMI)  &kp MINUS  &kp EQUAL  &trans     &trans   &kp LS(SEMI)  &kp SQT
